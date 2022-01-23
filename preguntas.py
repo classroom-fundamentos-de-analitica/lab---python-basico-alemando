@@ -342,8 +342,8 @@ def pregunta_09():
 
     for ele in listaT:
         listaN.append(len(ele))
-    lista = list(zip(listaK, listaN))
-    return sorted(lista, key=lambda tup: tup[0])
+    lista = dict(zip(listaK, listaN))
+    return lista
 
 
 def pregunta_10():
